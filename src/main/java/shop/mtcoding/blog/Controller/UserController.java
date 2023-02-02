@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class UserController {
 
-    @GetMapping(value = "/")
+    @GetMapping(value = { "/", "/main" })
     public String main() {
-        return "/frontend/main";
+        return "/frontend/user/main";
     }
 
     @GetMapping(value = "/loginForm")
