@@ -5,4 +5,26 @@
 
 <mapper namespace="shop.mtcoding.blog.model.UserRepository">
 
+  <insert id="insertUser">
+    insert into user_tb(username, password, email, created_at) values(#{username}, #{password}, #{email}, now())
+  </insert>
+
+  <select id="findAllUser" resultType="shop.mtcoding.blog.model.User">
+    select * from user_tb
+  </select>
+
+  <update id="updateUser">
+    update user_tb
+    set password = #{password}
+    where id = #{id}
+  </update>
+
+  <delete id="deleteUser">
+    delete from user_tb where id = #{id}
+  </delete>
+
+  <select id="login" resultType="shop.mtcoding.blog.model.User">
+    select * from user_tb where username = #{username} and password = #{password}
+  </select>
+
 </mapper>
