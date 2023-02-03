@@ -1,4 +1,4 @@
-package shop.mtcoding.blog.Controller;
+package shop.mtcoding.blog.controller;
 
 import javax.servlet.http.HttpSession;
 
@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import shop.mtcoding.blog.Model.UserRepository;
+import shop.mtcoding.blog.model.UserRepository;
 
 @Controller
 public class UserController {

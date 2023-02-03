@@ -1,4 +1,4 @@
-package shop.mtcoding.blog.Model;
+package shop.mtcoding.blog.model;
 
 import lombok.Getter;
 import lombok.Setter;
